@@ -40,11 +40,11 @@ const ManageJobsPosts = () => {
     });
 
     const fetchDataIndustry = () => {
-        fetch("http://localhost/api_cogent/api/industry/view_industry")
+        fetch("https://holowash.in/apicogent/industry/view_industry")
             .then((response) => {
                 return response.json();
             })
-            .then((data) => {
+            .then((data) => {   
                 console.log(data);
                 setIndustry(data.result);
             });
@@ -55,7 +55,7 @@ const ManageJobsPosts = () => {
     }, []);
 
     const fetchDataDepartment = () => {
-        fetch("http://localhost/api_cogent/api/job_category/view_job")
+        fetch("https://holowash.in/apicogent/job_category/view_job")
             .then((response) => {
                 return response.json();
             })
@@ -70,7 +70,7 @@ const ManageJobsPosts = () => {
     }, []);
 
     const fetchDataDesignation = () => {
-        fetch("http://localhost/api_cogent/api/category/view")
+        fetch("https://holowash.in/api_cogent/category/view")
             .then((response) => {
                 return response.json();
             })

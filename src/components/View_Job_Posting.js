@@ -12,7 +12,7 @@ function View_Job_Posting() {
      const [data, setData] = useState([]);
 
      const fetchData = () => {
-          fetch("http://localhost/api_cogent/api/job_posting/view")
+          fetch("https://holowash.in/api_cogent/job_posting/view")
                .then((response) => {
                     return response.json();
                })
