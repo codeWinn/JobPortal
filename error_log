@@ -1,0 +1,276 @@
+[05-Jan-2022 12:26:00 UTC] Slim Application Error:
+Type: FastRoute\BadRouteException
+Message: Cannot register two routes matching &quot;/users/showcountry&quot; for method &quot;GET&quot;
+File: /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php
+Line: 86
+Trace: #0 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, 'route12')
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, 'route12')
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(244): FastRoute\RouteCollector->addRoute(Array, '/users/showcoun...', 'route12')
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/functions.php(25): Slim\Router->Slim\{closure}(Object(FastRoute\RouteCollector))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(255): FastRoute\simpleDispatcher(Object(Closure), Array)
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(208): Slim\Router->createDispatcher()
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(585): Slim\Router->dispatch(Object(Slim\Http\Request))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(509): Slim\App->dispatchRouterAndPrepareRoute(Object(Slim\Http\Request), Object(Slim\Router))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(444): Slim\App->run()
+#12 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#13 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[05-Jan-2022 12:26:10 UTC] Slim Application Error:
+Type: FastRoute\BadRouteException
+Message: Cannot register two routes matching &quot;/users/showcountry&quot; for method &quot;GET&quot;
+File: /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php
+Line: 86
+Trace: #0 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, 'route12')
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, 'route12')
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(244): FastRoute\RouteCollector->addRoute(Array, '/users/showcoun...', 'route12')
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/functions.php(25): Slim\Router->Slim\{closure}(Object(FastRoute\RouteCollector))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(255): FastRoute\simpleDispatcher(Object(Closure), Array)
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(208): Slim\Router->createDispatcher()
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(585): Slim\Router->dispatch(Object(Slim\Http\Request))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(509): Slim\App->dispatchRouterAndPrepareRoute(Object(Slim\Http\Request), Object(Slim\Router))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(444): Slim\App->run()
+#12 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#13 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[05-Jan-2022 12:42:21 UTC] Slim Application Error:
+Type: FastRoute\BadRouteException
+Message: Cannot register two routes matching &quot;/users/showcountry&quot; for method &quot;GET&quot;
+File: /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php
+Line: 86
+Trace: #0 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, 'route12')
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, 'route12')
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(244): FastRoute\RouteCollector->addRoute(Array, '/users/showcoun...', 'route12')
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/functions.php(25): Slim\Router->Slim\{closure}(Object(FastRoute\RouteCollector))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(255): FastRoute\simpleDispatcher(Object(Closure), Array)
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(208): Slim\Router->createDispatcher()
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(585): Slim\Router->dispatch(Object(Slim\Http\Request))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(509): Slim\App->dispatchRouterAndPrepareRoute(Object(Slim\Http\Request), Object(Slim\Router))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(444): Slim\App->run()
+#12 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#13 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[05-Jan-2022 12:42:38 UTC] Slim Application Error:
+Type: FastRoute\BadRouteException
+Message: Cannot register two routes matching &quot;/users/showcountry&quot; for method &quot;GET&quot;
+File: /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php
+Line: 86
+Trace: #0 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, 'route12')
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, 'route12')
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(244): FastRoute\RouteCollector->addRoute(Array, '/users/showcoun...', 'route12')
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/functions.php(25): Slim\Router->Slim\{closure}(Object(FastRoute\RouteCollector))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(255): FastRoute\simpleDispatcher(Object(Closure), Array)
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(208): Slim\Router->createDispatcher()
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(585): Slim\Router->dispatch(Object(Slim\Http\Request))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(509): Slim\App->dispatchRouterAndPrepareRoute(Object(Slim\Http\Request), Object(Slim\Router))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(444): Slim\App->run()
+#12 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#13 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[05-Jan-2022 12:42:46 UTC] Slim Application Error:
+Type: FastRoute\BadRouteException
+Message: Cannot register two routes matching &quot;/users/showcountry&quot; for method &quot;GET&quot;
+File: /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php
+Line: 86
+Trace: #0 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, 'route12')
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, 'route12')
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(244): FastRoute\RouteCollector->addRoute(Array, '/users/showcoun...', 'route12')
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/nikic/fast-route/src/functions.php(25): Slim\Router->Slim\{closure}(Object(FastRoute\RouteCollector))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(255): FastRoute\simpleDispatcher(Object(Closure), Array)
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Router.php(208): Slim\Router->createDispatcher()
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(585): Slim\Router->dispatch(Object(Slim\Http\Request))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(509): Slim\App->dispatchRouterAndPrepareRoute(Object(Slim\Http\Request), Object(Slim\Router))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(444): Slim\App->run()
+#12 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#13 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[08-Jan-2022 17:30:10 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 413
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(638): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[08-Jan-2022 17:30:24 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 413
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(638): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[09-Jan-2022 03:08:43 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 421
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(638): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[09-Jan-2022 03:08:48 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 421
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(638): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[09-Jan-2022 04:10:02 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 414
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(640): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[09-Jan-2022 04:10:25 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 414
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(640): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[09-Jan-2022 04:10:58 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 414
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(640): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[09-Jan-2022 04:21:47 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 419
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(634): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[09-Jan-2022 04:22:34 UTC] Slim Application Error:
+Type: Error
+Message: Cannot use object of type stdClass as array
+File: /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php
+Line: 419
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u126553544/domains/360petmart.com/public_html/api/vendor/slim/slim/Slim/App.php(313): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u126553544/domains/360petmart.com/public_html/api/src/routes/users.php(634): Slim\App->run()
+#10 /home/u126553544/domains/360petmart.com/public_html/api/index.php(11): require('/home/u12655354...')
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
