@@ -17,12 +17,12 @@ export default function Profile() {
     // };
 
     const fetch = () =>{
-        axios.get(`http://localhost/cogent_api/candidate/view/${id}`).then((res)=>{
+        axios.get(`/candidate/view/${id}`).then((res)=>{
            setUser(res.data);
         })
     }
 
-const urlPost = "http://localhost/cogent_api/candidate/updateProfile"
+const urlPost = "/candidate/updateProfile"
 const[user,setUser] = useState({
 name: "",
 mobile_no: "",
@@ -77,8 +77,9 @@ return(
             </div>
 
 <form >
-<div className="container">
+<div className="container p-5">
     <h1>Update Profile</h1>
+    <div className="container pt-4">
     <label><b>Name</b></label>
     <input type="text" id="name" placeholder="Enter Your Name" defaultValue={user.name} onChange={e => handleChange(e)}/>
     <label><b>Mobile No</b></label>
@@ -88,10 +89,12 @@ return(
     <label><b>Designation</b></label>
     <input type="text" id="designation" placeholder="Enter Your designation"  defaultValue={user.designation} onChange={e => handleChange(e)}/>
     <label>
-    <input type="file" id="image"  defaultValue={user.image} onChange={e => handleChange(e)}/>
+    <div className='container'>
+    <input type="file" id="image"   defaultValue={user.image} onChange={e => handleChange(e)}/>
+    </div>
     </label>
+    </div>
     <button type="submit" onClick={handleSubmit} className="login">Update</button>
-
 </div>
 
 

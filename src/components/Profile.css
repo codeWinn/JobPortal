@@ -15,7 +15,7 @@
   }
   input[type=text], input[type=email], input[type=file] {
     width: 100%;
-    padding: 15px;
+    padding-left: 10px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;

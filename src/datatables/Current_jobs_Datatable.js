@@ -22,6 +22,7 @@ export default function Datatable() {
     fetchData();
     }, []);
 
+
   return (
     <div className='table-responsive'>
    

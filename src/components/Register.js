@@ -9,6 +9,7 @@ function Register() {
         mobile_no:""
     })
     const navigate = useNavigate();
+    console.log(navigate)
 
     const handleChange = (e) =>{
         const name = e.target.name;
@@ -24,14 +25,14 @@ function Register() {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        axios.post('candidate/register',{name:data.name,email:data.email,mobile_no:data.mobile_no}).then((res)=>{
+        axios.post('/candidate/register',{name:data.name,email:data.email,mobile_no:data.mobile_no}).then((res)=>{
+            navigate('/')
             if(res.data.message === 'Registration successfull'){
             alert(res.data.message);
-            navigate('/');
             }else{
                alert(res.data.message) ;
             }
-        })
+        }).catch((err)=>console.log(err.response))
     }
 
   return (
@@ -41,7 +42,7 @@ function Register() {
                     <div className='col-md-6'>
                         <img src="../images/register.jpg" className='custom-8'  />
                     </div>
-                    <div className='col-md-5'>
+                    <div className='col-md-5 p-4'>
                         <form>
                             <label style={{color:"white"}}>Enter Your Name:</label> 
                             <input className='form-control' type="phone" name="name" placeholder='Enter Your Name' 

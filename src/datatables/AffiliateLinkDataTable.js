@@ -25,6 +25,7 @@ export default function ResumeDataTab() {
   //   fetchData();
   //   }, []);
 
+  console.log(data,'data from jquery')
 
   return (
     <div className='table-responsive'>
@@ -41,7 +42,7 @@ export default function ResumeDataTab() {
           </tr>
         </thead>
         <tbody>
-          {data.map((items)=>{
+          {data?.map((items)=>{
             return(<tr key={items.id}>
                     <td>{items.copy_affiliated_link}</td>
                     <td>{items.refferal_name}</td>

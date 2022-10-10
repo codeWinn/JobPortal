@@ -24,7 +24,7 @@ const ManageJobsPosts = () => {
 const name = localStorage.getItem('auth_name');
 console.log(name);
     const fetch = () =>{
-        axios.get(`http://localhost/cogent_api/resume/view/${id}`).then((res)=>{
+        axios.get(`/resume/view/${id}`).then((res)=>{
            setUser(res.data);
         })
     }
@@ -33,7 +33,7 @@ console.log(name);
       }, []);
       
      
-        const urlPost = "http://localhost/cogent_api/resume/add"
+        const urlPost = "/resume/add"
         const navigate = useNavigate();
         const [user, setUser] = useState({
             name:"", 

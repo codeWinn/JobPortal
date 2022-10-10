@@ -32,7 +32,7 @@ import {
   Navigate
 } from "react-router-dom";
 
-axios.defaults.baseURL = "http://localhost/cogent_api/"
+axios.defaults.baseURL = "https://holowash.in/apicogent"
 
 function App() {
   const [isLogin,setisLogin] = useState(localStorage.getItem('auth_token'));

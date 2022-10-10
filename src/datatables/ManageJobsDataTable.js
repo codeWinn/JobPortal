@@ -1,96 +1,94 @@
-
 import React, { useState, useEffect } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { FaCheckDouble } from "react-icons/fa";
-import { GrFormView } from 'react-icons/gr';
+import { GrFormView } from "react-icons/gr";
 
 import axios from "axios";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Datatable() {
-
   const [data, setData] = useState([]);
-  const id = localStorage.getItem('auth_token');
+  const id = localStorage.getItem("auth_token");
   console.log(id);
   const fetchData = async () => {
-    await axios.get("http://localhost/cogent_api/candidateshowjobs/view")
-      .then((res) => {
-        console.log(res.data);
-        setData(res.data);
-        //console.log(res.data.result);
-      })
+    await axios.get("/candidateshowjobs/view").then((res) => {
+      console.log(res.data);
+      setData(res.data);
+      //console.log(res.data.result);
+    });
   };
-  const [user, setUser] = useState({
-
-  });
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     fetchData();
-    }, []);
-    
+  }, []);
+
   return (
-    <div className='table-responsive'>
+    <div className="table-responsive">
       {/* <a href="Candidate_manage_job  "><button type="button" class="btn btn-primary">Apply</button></a>*/}
-<div>
-      <table class="table">
-        <thead class="thead-dark">
-          <tr>
-          <th scope="col">Designation</th>
-            <th scope="col">Department</th>
-            <th scope="col">Company</th>
-            <th scope="col">Total Experience</th>
-            <th scope="col">Expected Salary</th>
-            <th scope="col">Notice Period</th>
-            <th scope="col">Qualification</th>
-            <th scope="col">Industry</th>
-            <th scope="col">Location</th>
-            <th scope="col">State</th>
-            <th scope="col">Role & Responsibities</th>
-            <th scope="col">Status</th>
-            <th scope="col">Reason</th>
-            <th scope="col">Interview Date</th>
-            <th scope="col">Interview Address</th>
-            <th scope="col">DOJ</th>
-            <th scope="col">Salary</th>
-            <th scope="col" colSpan="2">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-        {data.map((items) => {
-            return (<tr key={items.id}>
-              <td >{items.designation}</td> 
-              <td >{items.department}</td> 
-              <td >{items.total_experience}</td>
-              <td >{items.expected_salary}</td>
-              <td >{items.notice_period}</td>
-              <td >{items.qualification}</td>
-              <td >{items.industry}</td>
-              <td >{items.location}</td>
-              <td >{items.state}</td>
-              <td >{items.reason}</td>
-              <td >{items.interview_date}</td>
-              <td >{items.interview_address}</td>
-              <td >{items.doj}</td>
-              <td >{items.salary}</td>
-              
-              {/* <td > <Link to={'/Candidate_manage_job'}><FaCheckDouble/></Link>
+      <div>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Designation</th>
+              <th scope="col">Department</th>
+              <th scope="col">Company</th>
+              <th scope="col">Total Experience</th>
+              <th scope="col">Expected Salary</th>
+              <th scope="col">Notice Period</th>
+              <th scope="col">Qualification</th>
+              <th scope="col">Industry</th>
+              <th scope="col">Location</th>
+              <th scope="col">State</th>
+              <th scope="col">Role & Responsibities</th>
+              <th scope="col">Status</th>
+              <th scope="col">Reason</th>
+              <th scope="col">Interview Date</th>
+              <th scope="col">Interview Address</th>
+              <th scope="col">DOJ</th>
+              <th scope="col">Salary</th>
+              <th scope="col" colSpan="2">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((items) => {
+              return (
+                <tr key={items.id}>
+                  <td>{items.designation_name}</td>
+                  <td>{items.department}</td>
+                  <td>{items.experience}</td>
+                  <td>{items.expected_salary}</td>
+                  <td>{items.notice_period}</td>
+                  <td>{items.high_qualification}</td>
+                  <td>{items.industry_name}</td>
+                  <td>{items.location}</td>
+                  <td>{items.state}</td>
+                  <td>{items.reason}</td>
+                  <td>{items.interview_day}</td>
+                  <td>{items.interview_address}</td>
+                  <td>{items.dob}</td>
+                  <td>{items.salary}</td>
+
+                  {/* <td > <Link to={'/Candidate_manage_job'}><FaCheckDouble/></Link>
               </td> */}
-              <td>
-              <Link to={"/View_manage_job/" +items.id}><GrFormView/></Link></td>
-            </tr>)
-
-          })}
-
-        </tbody>
-      </table>
+                  <td>
+                    <Link to={"/View_manage_job/" + items.id}>
+                      <GrFormView />
+                    </Link>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
-</div>
-
-    
   );
 }
 
-
-{/*export default function Datatable() {
+{
+  /*export default function Datatable() {
   return (
     {/*<div className='table-responsive'>
     <TableContainer component={Paper}>
@@ -117,7 +115,5 @@ export default function Datatable() {
         </TableHead>
        
       </Table>
-  </TableContainer>*/}
-      
-
-
+  </TableContainer>*/
+}
