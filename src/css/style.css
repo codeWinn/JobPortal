@@ -8154,7 +8154,7 @@ table.basic-table {
 	margin-bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 	table {
 		border: 0;
 	}
@@ -8184,7 +8184,7 @@ table.basic-table {
 	table td:last-child {
 		border-bottom: 0;
 	}
-}
+} */
 
 /* ---------------------------------- */
 /* Accordion

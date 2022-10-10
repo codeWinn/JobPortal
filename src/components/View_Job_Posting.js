@@ -69,7 +69,7 @@ function View_Job_Posting() {
 
       <div class="utf-dashboard-content-inner-aera">
         <div class="row">
-          <div class="col-xl-12">
+          <div class="col-12">
             <div className="dashboard-box">
               <div className="headline">
                 <h3>
@@ -83,7 +83,7 @@ function View_Job_Posting() {
                   </button>
                 </h3>
               </div>
-              <Table striped bordered hover>
+              <Table striped bordered hover responsive="sm">
                 <thead>
                   <tr>
                     <th>Job Id</th>
